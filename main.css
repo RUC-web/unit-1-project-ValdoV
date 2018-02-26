@@ -4,8 +4,6 @@
   line-height: 1.4;
 }
 
-<link rel="stylesheet" type="text/css" href="main.css">
-
 h1, h2, h3, h4, h5, h6{
   font-family: "Ubuntu", sans-serif;
   line-height: 1.2;
@@ -34,10 +32,18 @@ h6{
   font-size: 1.0em;
   line-height: 1.2;
 }
+.body_text{
+  margin: auto;
+  text-align: center;
+}
 
 @media only screen and (min-width: 600px){
   .body_text {
     max-width: 75vw;
+  }
+  .pics {
+    max-width: 50%;
+    float: left;
   }
 }
 
@@ -45,4 +51,63 @@ h6{
   .body_text {
     max-width: 50vw;
   }
+  .pics {
+    max-width: 55%;
+    float: right;
+  }
+}
+
+.text {
+  height: 75vw;
+  background-image: url("boat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed
+  width: contain;
+}
+
+h1{
+  margin: 0px 0px 0px 0px;
+}
+p{
+  margin: 0px 0px 0px 0px;
+}
+
+body{
+  background-color: #ec9c0f
+}
+
+.nav-menu{
+  padding: 1em;
+  width: 100%;
+  -webkit-box-shadow:4px 3px 5px 0px rgba(5,4,5,1);
+  -moz-box-shadow:4px 3px 5px 0px rgba(5,4,5,1);
+  box-shadow:4px 3px 5px 0px rgba(5,4,5,1);
+}
+
+html *{
+    box-sizing: border-box;
+}
+
+.nav-menu ul{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+
+body{
+  margin: 0;
+}
+
+.nav-menu{
+  background-color: #F7E7C9;
+}
+
+.pics{
+  max-width: 100%;
 }
